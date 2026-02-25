@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <link rel="stylesheet" href="style.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"/>
+       <title>Pomodoro timer</title>
+   </head>
+<body>
+
+<section>
+    <div class="alert">You must provide a session title!</div>
+<div class="starting">
+<h1>SET YOUR TASK</h1>
+<img src="https://drumsettips.org/wp-content/uploads/2017/09/pomodoro.png" alt="pen" class="pomodoro image"/>
+<input type="text" placeholder="write what you want to focus on" id="taskInput"/>
+
+<div class="controInputs">
+<span>
+    <input type="number" placeholder="0" id="hoursInput" max="24" min="0"/>
+    <p>hour(s)</p>
+</span>
+
+<span>
+    <input type="number" placeholder="0" id="minutesInput" max="60" min="0"/>
+    <p>minutes(s)</p>
+</span>
+
+<span>
+    <input type="number" placeholder="0" id="secondsInput" max="60" min="0"/>
+    <p>seconds(s)</p>
+</span>
+
+</div>
+
+<button id="setTimer">SET TIMER</button>
+</div>
+</section>
+
+<main>
+<div class="mainSection">
+<h1 class="sucessMessage">LET'S GO !</h1>
+<h4 id="titleOutput">Finish that damn maths exercises</h4>
+<h1 id="timerOutput">00 : 00 : 00</h1>
+
+<div class="controlsButtons">
+<button id="pauseOrResumeBtn">PAUSE</button>
+<button id="restartBtn">RESTART</button>
+<button id="newTimerBTn">NEW TIMER</button>
+</div>
+
+<img src="https://drumsettips.org/wp-content/uploads/2017/09/pomodoro.png" alt="pen" class="pomodoro image"/>
+</div>
+</main>
+
+
+
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

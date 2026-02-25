@@ -1,0 +1,205 @@
+*{
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background:rgb(220, 10, 10);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    font-family:'MyFont' , 'Nosifer',sans-serif;
+}
+
+section{
+    width:100vw;
+    height:100vh;
+    display:block;
+}
+
+main{
+    width:100vw;
+    height:100vh;
+    display:none;
+}
+/* ===== STARTING ====*/
+.starting{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    top:-25px;
+}
+
+.starting h1{
+position:relative;
+text-transform: uppercase;
+font-size:95px;
+font-weight:900;
+color:rgb(216, 213, 213);
+}
+
+.starting img{
+    width:200px;
+    height:200px;
+    animation: timerSpin 7s linear infinite;
+}
+
+@keyframes timerSpin{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg); 
+    }
+}
+
+.starting #taskInput{
+    width:300px;
+    height:50px;
+    border-radius:25px;
+    border:4px solid gold;
+    font-size:15px;
+    padding-left:25px;
+    font-family:'MyFont',sans-serif;
+    outline:red;
+}
+
+.starting #taskInput::placeholder{
+    padding-left:10px;
+    font-size:13px;
+}
+
+.controInputs{
+    margin-top:30px;
+    display:flex;
+    gap:30px;
+    background:rgb(220, 10, 10);
+    box-shadow:inset -3px -3px 15px rgba(255,255,255) , inset -5px -5px 15px rgba(0,0,0,0.5);
+    width:500px;
+    padding:30px;
+    border-radius:10px;
+}
+
+.controInputs span{
+    display:flex;
+    gap:5px;
+    min-width:100px;
+}
+
+.controInputs span p{
+    position:relative;
+    top:10px;
+}
+
+.controInputs span input{
+    font-size:25px;
+    min-width:48px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    outline:rgb(74, 8, 8);
+    border:none;
+    background:transparent;
+    box-shadow:0 0 20px 3px rgba(0,0,0,0.5);
+    text-align:center;
+    border-radius:3px;
+}
+
+.controInputs span input::-webkit-inner-spin-button , .controInputs span input::-webkit-outer-spin-button{
+appearance:none;
+}
+
+.starting button{
+    position:relative;
+    top:70px;
+    width:300px;
+    height:65px;
+    background:rgb(220, 10, 10);
+    color:white;
+    font-weight:900;
+    font-size:40px;
+    border:5px solid white;
+    border-radius:10px;
+    font-family:'MyFont',sans-serif;
+    box-shadow:5px 3px 3px 0.5px rgba(0,0,0);
+    cursor:pointer;
+}
+
+@font-face{
+    font-family:"MyFont";
+    src:url("Pixellari.ttf")
+}
+
+.alert{
+    position:relative;
+    text-align:center;
+    background:white;
+    width:100vw;
+    height:30px;
+    color:red;
+    padding-top:10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:900;
+    display:none;
+}
+
+/*==== MAIN === */
+.mainSection{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:30px;
+}
+
+.mainSection .sucessMessage{
+    font-size:80px;
+    margin-top:20px;
+    margin-bottom:60px;
+}
+
+.mainSection h4{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.mainSection #timerOutput{
+    font-size:10rem;
+}
+.mainSection .controlsButtons{
+    display:flex;
+    gap:20px;
+}
+
+.mainSection .controlsButtons button{
+    width:150px;
+    height:40px;
+    border:2px solid red;
+    background:transparent;
+    border-radius:10px;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.mainSection .controlsButtons button:hover{
+ background:rgb(220, 10, 10);
+ box-shadow:inset -3px -3px 15px rgba(255,255,255,0.2) , inset -5px -5px 15px rgba(0,0,0,0.7);
+ border:none;
+}
+
+.mainSection img{
+    width:150px;
+    height:150px;
+    margin-top:60px;
+    animation: timerSpin 7s linear infinite;
+}
+
